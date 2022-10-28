@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&family=Signika+Negative:wght@400;500;600&display=swap');
+
+:root{
+	--bg-color: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:none;
+    outline: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+}
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Mulish', sans-serif;
+    src: url("../fonts/Mulish/Mulish-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Signika Negative', sans-serif;
+    src: url("../fonts/Signika_Negative/SignikaNegative-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish', sans-serif;
+    src: url("../fonts/Mulish/Mulish-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Signika Negative', sans-serif;
+    src: url("../fonts/Signika_Negative/SignikaNegative-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish', sans-serif;
+    src: url("../fonts/Mulish/Mulish-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Signika Negative', sans-serif;
+    src: url("../fonts/Signika_Negative/SignikaNegative-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish', sans-serif;
+    src: url("../fonts/Mulish/Mulish-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Signika Negative', sans-serif;
+    src: url("../fonts/Signika_Negative/SignikaNegative-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish', sans-serif;
+    src: url("../fonts/Mulish/Mulish-ExtraBold.ttf");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Signika Negative', sans-serif;
+    src: url("../fonts/Signika_Negative/SignikaNegative-SemiBold.ttf");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish', sans-serif;
+    src: url("../fonts/Mulish/Mulish-Bold.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Signika Negative', sans-serif;
+    src: url("../fonts/Signika_Negative/SignikaNegative-Bold.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+body{
+    min-height: 100%;
+    font-weight: 400;
+    color: rgb(40, 40, 40);
+    line-height: 24px;
+    background: var(--bg-color);
+    font-style: normal;
+    visibility: visible;
+    font-family: 'Mulish', sans-serif !important;
+    font-family: 'Signika Negative', sans-serif !important;
+}
+::selection {
+    color: red;
+    background: yellow;
+}
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    user-select: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    object-fit: cover;
+}
+img:disabled{
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+    pointer-events: none;
+    object-fit: cover;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+h1, h2, h3, h4, h5, h6, th {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+a,
+button {
+    color: inherit;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+a,
+button,
+img,
+input,
+span {
+    outline: none;
+    transition: all 0.3s ease 0s;
+}
+body,
+input,
+textarea,
+button{
+    outline: none;
+    font-weight: 400;
+}
+p{
+    font-weight: 600;
+}
