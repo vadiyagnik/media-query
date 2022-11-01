@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState, useContext, createContext } from 'react';
+const AuthContext = createContext(null);
 
-export const Registration = () => {
+export const AuthProvider = ({ children }) => {
+    const [user, setUser] = useState(null);
+    const login =(user)=>{
+        setUser(user);
+    };
+    const logout =()=>{
+        setUser(null);
+    };
+
     return (
-        <div>Registration Form</div>
+        <AuthContext.Provider value={{ user, login, logout }}>
+            {children}
+        </AuthContext.Provider>
     );
 };
 
-export const Login = () => {
-    return (
-        <div>Login Form</div>
-    );
+export const useAuth = () => {
+    return useContext(AuthContext);
 };

@@ -174,14 +174,12 @@ button,
 img,
 input,
 span {
-    outline: none;
     transition: all 0.3s ease 0s;
 }
 body,
 input,
 textarea,
 button{
-    outline: none;
     font-weight: 400;
 }
 p{
